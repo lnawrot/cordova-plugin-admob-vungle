@@ -1,0 +1,12 @@
+{
+  "name": "cordova-plugin-admob-vungle",
+  "version": "1.0.0",
+  "description": "Cordova AdMob Mediation Plugin for Vungle",
+  "cordova": {
+    "id": "cordova-plugin-admob-vungle",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  }
+}

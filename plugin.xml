@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="cordova-plugin-admob-vungle" version="1.0.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <name>cordova-plugin-admob-vungle</name>
+    <description>Cordova AdMob Mediation Plugin for Vungle</description>
+
+    <engines>
+        <engine name="cordova" version=">=3" />
+    </engines>
+
+    <platform name="android">
+        <framework src="com.google.ads.mediation:vungle:6.8.1.0" />
+
+        <!-- Prevents compilation error: https://developer.android.com/studio/build/multidex.html -->
+        <!-- when add additional mediation plugins -->
+        <dependency id="cordova-plugin-multidex" />
+    </platform>
+
+    <platform name="ios">
+        <pods-config ios-min-version="9.0" use-frameworks="true" />
+        <pod id="GoogleMobileAdsMediationVungle" version="6.8.1.0" />
+
+        <header-file src="src/ios/Vungle.h" />
+        <source-file src="src/ios/Vungle.m" />
+
+        <!-- Prevents compilation failures when using pod's id with additional mediations plugins -->
+        <dependency id="cordova-plugin-cocoapod-support" />
+    </platform>
+
+	<config-file parent="/*" target="config.xml">
+		<preference name="REWARDVIDEO_ID" value="$REWARDVIDEO_ID"/>
+	</config-file>
+</plugin>
