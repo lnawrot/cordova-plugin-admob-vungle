@@ -15,14 +15,17 @@
     </platform>
 
     <platform name="ios">
-        <pods-config ios-min-version="9.0" use-frameworks="true" />
-        <pod id="GoogleMobileAdsMediationVungle" version="6.8.1.0" />
+        <podspec>
+            <config>
+                <source url="https://cdn.cocoapods.org/"/>
+            </config>
+            <pods use-frameworks="true">
+                <pod name="GoogleMobileAdsMediationVungle" spec="6.8.1.0"/>
+            </pods>
+        </podspec>
 
         <header-file src="src/ios/Vungle.h" />
         <source-file src="src/ios/Vungle.m" />
-
-        <!-- Prevents compilation failures when using pod's id with additional mediations plugins -->
-        <dependency id="cordova-plugin-cocoapod-support" />
     </platform>
 
 	<config-file parent="/*" target="config.xml">
