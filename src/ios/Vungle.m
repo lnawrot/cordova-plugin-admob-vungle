@@ -28,7 +28,7 @@
         [GADRewardedAd
             loadWithAdUnitId:rewardvideoId
             request:request
-            completionHandler:^(GADRewarded *ad, NSError *error) {
+            completionHandler:^(GADRewardedAd *ad, NSError *error) {
                 NSLog(@"load handler");
             }
         ];
