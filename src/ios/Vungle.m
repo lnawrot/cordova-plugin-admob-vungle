@@ -26,7 +26,7 @@
         [request registerAdNetworkExtras:extras];
 
         [GADRewardedAd
-            loadWithAdUnitId:rewardvideoId
+            loadWithAdUnitID:rewardvideoId
             request:request
             completionHandler:^(GADRewardedAd *ad, NSError *error) {
                 NSLog(@"load handler");
