@@ -11,7 +11,7 @@
     </engines>
 
     <platform name="android">
-        <framework src="com.google.ads.mediation:vungle:6.12.1.0" />
+        <framework src="com.google.ads.mediation:vungle:7.4.0.0" />
     </platform>
 
     <platform name="ios">
