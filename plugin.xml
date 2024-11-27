@@ -20,7 +20,7 @@
                 <source url="https://cdn.cocoapods.org/"/>
             </config>
             <pods use-frameworks="true">
-                <pod name="GoogleMobileAdsMediationVungle" spec="7.1.0.0"/>
+                <pod name="GoogleMobileAdsMediationVungle" spec="7.3.2.0"/>
             </pods>
         </podspec>
 
